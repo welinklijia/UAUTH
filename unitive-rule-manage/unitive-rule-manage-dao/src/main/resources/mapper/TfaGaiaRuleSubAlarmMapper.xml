@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.boco.unitive.rule.dao.TfaGaiaRuleSubAlarmMapper">
+  <resultMap id="BaseResultMap" type="com.boco.unitive.rule.entity.TfaGaiaRuleSubAlarm">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="SER_FILE_ID" jdbcType="DECIMAL" property="serFileId" />
+    <result column="SUB_ALARM_NAME" jdbcType="VARCHAR" property="subAlarmName" />
+    <result column="FILTER_NAME" jdbcType="VARCHAR" property="filterName" />
+    <result column="RELATION" jdbcType="VARCHAR" property="relation" />
+    <result column="RELATION_NAME" jdbcType="VARCHAR" property="relationName" />
+    <result column="LOCATION" jdbcType="VARCHAR" property="location" />
+    <result column="IS_EXIST" jdbcType="DECIMAL" property="isExist" />
+    <result column="PRIORITY" jdbcType="DECIMAL" property="priority" />
+    <result column="IS_MAIN_ALARM" jdbcType="DECIMAL" property="isMainAlarm" />
+    <result column="EXTEND_KEY" jdbcType="VARCHAR" property="extendKey" />
+    <result column="CLEAR_ALARM_JOIN" jdbcType="DECIMAL" property="clearAlarmJoin" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.boco.unitive.rule.entity.TfaGaiaRuleSubAlarm">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="FILTER_CONDITION" jdbcType="CLOB" property="filterCondition" />
+  </resultMap>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    FILTER_CONDITION
+  </sql>
+</mapper>

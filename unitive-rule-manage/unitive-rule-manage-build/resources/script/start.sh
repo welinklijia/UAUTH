@@ -1,0 +1,1 @@
+nohup ./app.sh start >> ./nohup.out &
