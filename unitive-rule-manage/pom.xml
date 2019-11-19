@@ -14,6 +14,12 @@
   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   	<oracle.jdbc.version>11.2.0.3</oracle.jdbc.version>
   </properties>
+  <scm>
+  	<connection>scm:git:https://github.com/welinklijia/UAUTH</connection>
+  	<developerConnection>scm:git:https://github.com/welinklijia/UAUTH</developerConnection>
+  	<tag>https://github.com/welinklijia/UAUTH/tags</tag>
+  	<url>https://github.com/welinklijia/UAUTH</url>
+  </scm>
   <dependencyManagement>
   	<dependencies>
 		<dependency>
@@ -44,6 +50,25 @@
 				<source>1.7</source>
 				<target>1.7</target>
 			</configuration>
+		</plugin>
+		<!-- 版本发布插件 -->
+		<plugin>
+			 <groupId>org.apache.maven.plugins</groupId>   
+                <artifactId>maven-release-plugin</artifactId>   
+                <configuration>   
+                    <tagBase>https://github.com/welinklijia/UAUTH/tags</tagBase>   
+                    <checkModificationExcludes>   
+                        <checkModificationExclude>.project</checkModificationExclude> 
+                        <checkModificationExclude>.settings</checkModificationExclude>   
+                        <checkModificationExclude>.classpath</checkModificationExclude>   
+                    </checkModificationExcludes>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+	              <tagNameFormat>v@{project.version}</tagNameFormat>
+	              <generateReleasePoms>false</generateReleasePoms>
+	              <arguments>-DskipTests</arguments>
+	              <username>welinklijia</username> 
+	              <password>lijia041-</password>  
+                </configuration>   
 		</plugin>
   	</plugins>
   </build>
