@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.boco</groupId>
   <artifactId>unitive-rule-manage</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <packaging>pom</packaging>
   <modules>
   	<module>unitive-rule-manage-dao</module>
@@ -15,8 +15,8 @@
   	<oracle.jdbc.version>11.2.0.3</oracle.jdbc.version>
   </properties>
   <scm>
-  	<connection>scm:git:https://github.com/welinklijia/UAUTH</connection>
-  	<developerConnection>scm:git:https://github.com/welinklijia/UAUTH</developerConnection>
+  	<connection>scm:git:https://github.com/welinklijia/UAUTH.git</connection>
+  	<developerConnection>scm:git:https://github.com/welinklijia/UAUTH.git</developerConnection>
   	<tag>https://github.com/welinklijia/UAUTH/tags</tag>
   	<url>https://github.com/welinklijia/UAUTH</url>
   </scm>
