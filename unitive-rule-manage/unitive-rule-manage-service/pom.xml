@@ -3,14 +3,14 @@
   <parent>
     <groupId>com.boco</groupId>
     <artifactId>unitive-rule-manage</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
   </parent>
   <artifactId>unitive-rule-manage-service</artifactId>
   <dependencies>
   	<dependency>
   		<groupId>com.boco</groupId>
   		<artifactId>unitive-rule-manage-dao</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
+  		<version>0.0.1</version>
   	</dependency>
   	<!--代码生成器依赖-->
      <dependency>

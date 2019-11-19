@@ -3,14 +3,14 @@
   <parent>
     <groupId>com.boco</groupId>
     <artifactId>unitive-rule-manage</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
   </parent>
   <artifactId>unitive-rule-manage-blocapi</artifactId>
    <dependencies>
 	  	<dependency>
 	  		<groupId>com.boco</groupId>
 	  		<artifactId>unitive-rule-manage-service</artifactId>
-	  		<version>0.0.1-SNAPSHOT</version>
+	  		<version>0.0.1</version>
 	  	</dependency>
 	  	<dependency>
 			<groupId>org.springframework.boot</groupId>
